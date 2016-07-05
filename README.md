@@ -36,7 +36,7 @@ f.bat
 2. Option for Project:
     + 常规 -> MFC的使用：在静态库中使用MFC
 3. Rom component
-![Rom](http://o7orbx8c7.bkt.clouddn.com/NuoRom.png)
+![Rom](./RomComponent.png)
 
 ## Build
 ```
