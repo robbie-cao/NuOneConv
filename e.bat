@@ -33,7 +33,7 @@ for /f %%a in (%temp%) do (
 	)
 
 for /f %%a in (%targetfile%) do (
-	NuoEnc.exe %%a %para% >> %logfile%
+	.\Release\NuoEnc.exe %%a %para% >> %logfile%
 	)
 
 :: move files
@@ -48,7 +48,7 @@ for /f %%a in (%temp%) do (
 	echo %wd%\output\%%a >> %nuofile%
 	)
 
-Nuo2Rom %nuofile% .\flash.ROM
+.\Release\Nuo2Rom %nuofile% .\flash.ROM
 @echo ROM Complete!
 
 goto exit
@@ -59,5 +59,5 @@ goto exit
 :exit
 del %temp%
 del %targetfile%
-del AudioTool.log
+del Release\AudioTool.log
 del %nuofile%
